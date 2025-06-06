@@ -1,0 +1,17 @@
+{
+  "name": "blockchain-course-template",
+  "version": "1.0.0",
+  "description": "Welcome! This repo is designed for final-year students learning blockchain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
