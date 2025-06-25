@@ -7,7 +7,7 @@ contract VotingEligibility {
     
     constructor() {
         owner = msg.sender;
-    }
+    } 
 
     function checkEligibility(uint age) public view returns (bool) {
         if (age >= minAge) {
