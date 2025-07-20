@@ -12,12 +12,9 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyMintableToken is ERC20, Ownable {
-    constructor(string memory name, string memory symbol, address initialOwner)
-    ERC20(name, symbol)
-    Ownable(initialOwner){}
+    constructor() ERC20("MyMintableToken", "MMT") Ownable(msg.sender) {}
 
-
-    function mint(address to, uint256 amount) public onlyOwner {
+    function mint(address to, uint amount) public onlyOwner {
         _mint(to, amount);
     }
 }
@@ -44,7 +41,7 @@ contract MyMintableToken is ERC20, Ownable {
 
 - Xem contract trên Etherscan thông qua address: 
 ```bash
- 0xAC7DB49b5a03e5755e75f22c8928244394b10744
+0x0b7C59A9e1B47cFA69169434875dD0aD548E0A83
 ```
   ![Kiểm tra trên Etherscan](image/contract.png)
   *Hình 6: Smart contract trên Etherscan*
